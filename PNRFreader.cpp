@@ -75,7 +75,7 @@ void ProcessFile(char *pnrf_fname)
 			int iSegIndex = 1;
 			int iCount = itfSegments->Count;
 			long totalsamples = 0, nchars;
-			printf("\n  Total Segments found         : %d", iCount);
+			printf("\n  Total segments found         : %d", iCount);
 			printf("\n  Segments finished processing : ");
 			// loop through all available segments
 			for (iSegIndex = 1; iSegIndex <= iCount; iSegIndex++)
@@ -126,7 +126,7 @@ void ProcessFile(char *pnrf_fname)
 
 				for (int temp = 0; temp < nchars; temp++)printf("\b"); fflush(stdout);
 			}
-			printf("\n\n  Total Samples In All Segments = %ld", totalsamples);
+			printf("\n\n  Total samples in all segments = %ld", totalsamples);
 			printf("  \n   ** Output file %s written **", fname);
 			fclose(fptr);
 		}

@@ -18,7 +18,7 @@ plot_RMS_current_from_PNRF <- function(filename){
     time_current <- as.matrix(read.table(filename_out,header=TRUE,sep="\t",as.is=TRUE));
     sampleslimit <- 20000; #20k samples to be plot
     start <- 2.8*1e6;  #some random starting point
-    print(sprintf("nrows=%d, ncols=%d, but we limit to %d rows",nrow(time_current),ncol(time_current),sampleslimit));
+    print(sprintf("Total samples=%d: we limit the RMS analysis to randomly selected %d samples",nrow(time_current),sampleslimit));
     
     time_current1 <- time_current[start:(start+sampleslimit-1),]
     time_current2 <- matrix(0,sampleslimit,2);
