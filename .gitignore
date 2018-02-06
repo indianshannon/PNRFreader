@@ -6,6 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+VT609-Channel-3.txt
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
